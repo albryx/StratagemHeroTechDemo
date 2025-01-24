@@ -2,7 +2,7 @@
 var stratagems = undefined;
 
 var xhr = new XMLHttpRequest();
-xhr.open(method='GET', url='./data/HD2-Sequences.json', async=false); // false indicates synchronous request
+xhr.open(method='GET', url='./data/QTESequences.json', async=false); // false indicates synchronous request
 xhr.send();
 
 if (xhr.status === 200) {
