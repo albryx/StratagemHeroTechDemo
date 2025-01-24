@@ -1,2 +1,2 @@
 # Stratagem Hero Online
-Play the game here! https://combustibletoast.github.io/
+https://albryx.github.io/StratagemHeroTechDemo/
