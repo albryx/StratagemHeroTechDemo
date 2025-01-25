@@ -1,17 +1,14 @@
 // Load stratagem data
 var stratagems = undefined;
+//Base64 of Json Sequence
+const QTESequence = "Ww0KICB7DQogICAgIm5hbWUiOiAiRXNwbG9zaXZhIiwNCiAgICAic2VxdWVuY2UiOiAiRFJEUkRERERERERERERERERERERERERERCIsDQogICAgImltYWdlIjogImVzcGxvc2lvbmUuc3ZnIg0KICB9DQpd";
 
-var xhr = new XMLHttpRequest();
-xhr.open(method='GET', url='./data/QTESequences.json', async=false); // false indicates synchronous request
-xhr.send();
+// Decode the Base64 string
+const jsonString = atob(base64Data);
 
-if (xhr.status === 200) {
-    stratagems = xhr.responseText;
-} else {
-    console.error('Error reading file:', xhr.statusText);
-}
+// Parse the decoded string into a JSON object
+stratagems = JSON.parse(jsonString);
 
-stratagems = JSON.parse(stratagems);
 // console.log(stratagems);
 
 // Install keypress listener
