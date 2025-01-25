@@ -4,7 +4,7 @@ var stratagems = undefined;
 const QTESequence = "Ww0KICB7DQogICAgIm5hbWUiOiAiRXNwbG9zaXZhIiwNCiAgICAic2VxdWVuY2UiOiAiRFJEUkRERERERERERERERERERERERERERCIsDQogICAgImltYWdlIjogImVzcGxvc2lvbmUuc3ZnIg0KICB9DQpd";
 
 // Decode the Base64 string
-const jsonString = atob(base64Data);
+const jsonString = atob(QTESequence);
 
 // Parse the decoded string into a JSON object
 stratagems = JSON.parse(jsonString);
